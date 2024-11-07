@@ -13,6 +13,7 @@ import { UsersModule } from './user/user.module';
       isGlobal: true,
       cache: true,
       load: [AppConfig, DatabaseConfig],
+      envFilePath: process.env.NODE_ENV === 'test' ? '.env.test' : '.env',
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],

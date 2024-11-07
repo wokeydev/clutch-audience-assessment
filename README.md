@@ -68,3 +68,21 @@ To revert the last applied migration:
     ```bash
     npm run migration:revert
     ```
+
+### Testing
+
+This project includes both unit tests and end-to-end (e2e) tests. Follow the instructions below to run each type of test. To run unit tests:
+
+```
+npm run test:e2e
+```
+
+This command runs all unit tests using Jest. Unit tests are located in the src directory and are typically named *.spec.ts.
+
+To run e2e tests:
+
+```
+npm run test:e2e
+```
+
+Important: Before running e2e tests, ensure that `.env.test` file exists in the root directory. This file should contain environment variables specific to the test environment, such as database credentials and JWT secrets.
