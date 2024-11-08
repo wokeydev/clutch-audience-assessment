@@ -74,7 +74,7 @@ To revert the last applied migration:
 This project includes both unit tests and end-to-end (e2e) tests. Follow the instructions below to run each type of test. To run unit tests:
 
 ```
-npm run test:e2e
+npm run test
 ```
 
 This command runs all unit tests using Jest. Unit tests are located in the src directory and are typically named *.spec.ts.
