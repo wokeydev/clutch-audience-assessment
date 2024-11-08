@@ -16,8 +16,7 @@ class User {
   password: string;
 
   @Column({
-    type: 'enum',
-    enum: Role,
+    type: 'varchar',
     default: Role.USER,
   })
   role: Role;
